@@ -1,0 +1,51 @@
+<!--
+	Objetivo: Form para enviar nomes com o método POST para a Servlet 
+			  AdicionaContatoServlet.
+			  
+	Autor: Bruno Fraga
+	Data: 17/02/2015
+ -->
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		
+		<!-- Linking CSS documents -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+		<link href="fonts/glyphicons-halflings-regular.svg"/>
+		
+		
+		<title>Famelicus - Painel de Controle</title>
+	</head>
+	<body>
+	<div class="panel panel-primary ">
+		<div class="panel-heading">
+			<h2>Cadastro de Ponto de Alimentação</h2>
+		</div>
+					
+		<div class = "container center-block ">
+			<form action="adicionaPa" method="post">
+			<br/>
+       			<div class="input-group col-xs-12 col-sm-5 col-md-5">
+		 			<span class="input-group-addon" id="basic-addon1">Nome</span>
+       				<input class="form-control" type = "text" name = "nome" placeholder="Nome do Ponto de Alimentação"/>
+       			</div>
+       			<br/>
+       		
+       			<div class="input-group col-xs-12 col-sm-5 col-md-5">
+	       			<span class="input-group-addon" id="basic-addon1">Localização</span>
+    	    		<input class="form-control-inline" type = "number" name = "lat" placeholder="Latitude"/>
+        			<input class="form-control-inline" type = "number" name = "lng" placeholder="Longitude"/>
+        		</div>
+        		<br/>
+			
+				<div class="input-group col-xs-12 col-sm-1 col-md-1">
+					<input class=" btn btn-default text-left" type='submit' value='Gravar'/>
+				</div>			
+			</form>
+		</div>
+	</div>
+	</body>
+</html>
